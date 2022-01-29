@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "multi-armed-bandit"
+version = "0.1.0"
+description = ""
+authors = ["David S <dshvimer@pm.me>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.22.1"
+gym = "^0.21.0"
+pandas = "^1.4.0"
+jupyter = "^1.0.0"
+ipykernel = "^6.7.0"
+matplotlib = "^3.5.1"
+joblib = "^1.1.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = {version = "^21.12b0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+testbed = "multi_armed_bandit.testbed:main"
+ads = "multi_armed_bandit.ads:main"
